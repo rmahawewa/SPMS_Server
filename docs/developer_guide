@@ -1,0 +1,70 @@
+Classes
+
+-class: course
+-id
+-code
+-course-name
+-timestamp
+
+-class: student
+-id
+-nic
+-name
+-birthday
+-address
+-timestamp
+
+-class: student-course
+-id
+-student-id - ref
+-course-id - ref
+-date-of-start
+-current-year
+-date-of-graduate
+-timestamp
+
+-class: module
+-id
+-code
+-semester
+-year
+-course-id - ref
+-resource-for-evaluation
+-timestamp
+
+-class: sub-module
+-id
+-code
+-main-module-id - ref
+-resource-for-evaluation
+-timestamp
+
+-class: resource-for-evaluation
+-id
+-module-id - ref
+-type
+-resource
+-date-time
+-timestamp
+
+-class: sub-resource-for-evaluation
+-id
+-sub-module-id - ref
+-type
+-resource
+-date-time
+-timestamp
+
+-class: resource-for-evaluation - student
+-id
+-resource-for-evaluation-id - ref
+-student-id - ref
+-marks
+-timestamp
+
+-class: sub-resource-for-evaluation - student
+-id
+-sub-resource-for-evaluation-id - ref
+-student-id - ref
+-marks
+-timestamp
